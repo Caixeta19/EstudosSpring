@@ -9,19 +9,19 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class Application {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(Application.class, args);
+		SpringApplication.run(Application.class, args);
 
-		SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
+		//SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
 
 		//Retirar banner SPRING
-		builder.bannerMode(Banner.Mode.OFF);
-        builder.profiles("producao", "homologacao");
+	//builder.bannerMode(Banner.Mode.OFF);
+       // builder.profiles("producao", "homologacao");
 
-		builder.run(args);
+		//builder.run(args);
 
 		//contexto da aplicação já iniciada:
-		ConfigurableApplicationContext applicationContext = builder.context();
-		var produtoRepository = applicationContext.getBean("produtoRepository");
+		//ConfigurableApplicationContext applicationContext = builder.context();
+		//var produtoRepository = applicationContext.getBean("produtoRepository");
 	}
 
 }
