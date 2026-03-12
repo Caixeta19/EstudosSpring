@@ -13,6 +13,7 @@ public class TesteFabricaController {
 
     //Injeta automaticamente uma dependência que já está gerenciada pelo Spring.
     @Autowired
+    @Aspirado
     //@Qualifier("motorEletrico")
     private Motor motor;
 
