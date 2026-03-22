@@ -1,4 +1,5 @@
 package com.example.arquiteturaspring;
+import jakarta.el.BeanNameResolver;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,6 +23,10 @@ public class Application {
 		//contexto da aplicação já iniciada:
 		//ConfigurableApplicationContext applicationContext = builder.context();
 		//var produtoRepository = applicationContext.getBean("produtoRepository");
+
+
+
 	}
+
 
 }
